@@ -1,7 +1,8 @@
-import React from 'react'
-import Login from "../components/login"
-import TopBar from "../components/header"
-export const home = () => {
+import React from 'react';
+import TopBar from '../components/header'; 
+import Login from '../components/login'; 
+
+const LoginPage = () => {
   return (
     <div>
         <TopBar/>
@@ -9,3 +10,5 @@ export const home = () => {
     </div>
   )
 }
+
+export default LoginPage;

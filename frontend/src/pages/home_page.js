@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../components/header';
-import Title from '../components/title';
+// import Header from '../components/header';
+// import Title from '../components/title';
 
-const HomePage = () => {
+const homePage = () => {
   return (
     <div>
-      <Header />
-      <Title />
+      {/* <Header />
+      <Title /> */}
     </div>
   );
 };
 
-export default HomePage;
+export default homePage;

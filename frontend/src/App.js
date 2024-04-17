@@ -1,13 +1,12 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Header from "../src/components/header";
+import Loginpage from "./pages/login_page";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header /> {/* Render the Header component */}
       <Routes>
-        <Route index element={<header />} />
+        <Route index element={<Loginpage />} />
       </Routes>
     </BrowserRouter>
   );
