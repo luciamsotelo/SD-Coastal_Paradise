@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { Link } from 'react-router-dom';
+
 
 function Login() {
   return (
@@ -33,18 +33,10 @@ function Login() {
 
       <Form.Group as={Row} className="mb-3">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Button type="submit">Sign in</Button>
+          <Button type="submit">Welcome Back</Button>
         </Col>
       </Form.Group>
 
-      <Form.Group as={Row} className="mb-3">
-        <Col sm={{ span: 10, offset: 2 }}>
-          {/* Link to your sign-up page */}
-          <Link to="/signup">
-            <Button variant="secondary">Sign up</Button>
-          </Link>
-        </Col>
-      </Form.Group>
     </Form>
   );
 }
