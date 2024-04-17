@@ -5,6 +5,7 @@ import Register from "./pages/new_user";
 import Current from "./pages/current_user";
 import Cards from "./components/cards";
 import Image from "./components/image_card";
+
 function App() {
   return (
     <BrowserRouter>
