@@ -24,7 +24,7 @@ const MyForm = () => {
   };
 
   return (
-    <div style={{ backgroundImage: 'url(https://media.istockphoto.com/id/529370025/photo/welcome.jpg?s=612x612&w=0&k=20&c=jOlT-LxkFLKCxA36FEtPKYhjj18guf7E9l6dZP_MqJA=)', backgroundSize: 'cover', maxWidth: '100%', maxHeight: '75%', padding: '110px 100px 800px 100px' }}>
+    <div style={{ backgroundImage: 'url(https://st.depositphotos.com/1757635/1758/i/450/depositphotos_17588905-stock-photo-welcome.jpg)', backgroundSize: 'cover', maxWidth: '100%', maxHeight: '75%', padding: '110px 100px 800px 100px' }}>
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="formFirstName">
         <Form.Label>First Name</Form.Label>
