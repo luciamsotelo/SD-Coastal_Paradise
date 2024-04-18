@@ -11,7 +11,7 @@ function GridExample() {
     {
       image: 'https://www.pierfishing.com/wp-content/uploads/2017/03/IBP_2007_Pier6.jpg',
       title: 'Imperial Beach',
-      text: 'Nestled in Southern California and home to 370 species of birds and considered one of the best birding areas in Southern California. Visit the Tijuana Estuary Visitor Center for maps of public trail systems and guided tours of the area.',
+      text: 'Nestled in Southern California, home to 370 species of birds and considered one of the best birding areas in California. Visit the Tijuana Estuary Visitor Center for maps of public trail systems and guided tours of the area.',
       link: '/imperial'
     },
     {
@@ -27,12 +27,12 @@ function GridExample() {
     {
       image: 'https://resizer.otstatic.com/v2/photos/wide-huge/1/32428515.jpg',
       title: 'Mission Beach',
-      text: 'One more card with its own text.'
+      text: 'Step into the enchanting world, where you will be captivated by its lively boardwalk, thrilling amusement park, and pristine sands stretching as far as the eye can see. Renowned for its vibrant atmosphere, Mission Beach is the quintessential destination for surfing enthusiasts,sun worshippers, and families alike. Embrace the laid-back charm of its picture-perfect setting, where every moment is filled with excitement and relaxation.'
     },
     {
       image: 'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/152000/152282-Pacific-Beach.jpg',
       title: 'Pacific Beach',
-      text: 'Fifth card text.'
+      text: 'its energetic ambiance, attracts a vibrant crowd, particularly young college students. With its lively boardwalk, trendy bars, and golden sands, its a hot spot for surfing, nightlife, and youthful seaside adventures along the beautiful coast.'
     },
     {
       image: 'https://fox5sandiego.com/wp-content/uploads/sites/15/2023/04/AdobeStock_284439394.jpeg?w=2560&h=1440&crop=1',
