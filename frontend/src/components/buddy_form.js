@@ -24,6 +24,7 @@ const MyForm = () => {
   };
 
   return (
+    <div style={{ backgroundImage: 'url(https://media.istockphoto.com/id/529370025/photo/welcome.jpg?s=612x612&w=0&k=20&c=jOlT-LxkFLKCxA36FEtPKYhjj18guf7E9l6dZP_MqJA=)', backgroundSize: 'cover', maxWidth: '100%', maxHeight: '75%', padding: '110px 100px 800px 100px' }}>
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="formFirstName">
         <Form.Label>First Name</Form.Label>
@@ -72,11 +73,13 @@ const MyForm = () => {
           required 
         />
       </Form.Group>
-
-      <Button href="http://localhost:3000/Cards" variant="primary" type="submit">
+      <br></br>
+      <Button href="http://localhost:3000/Cards" variant="info" type="submit">
         Join the Community
       </Button>
+      
     </Form>
+    </div>
   );
 };
 
