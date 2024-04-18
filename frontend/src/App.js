@@ -1,11 +1,11 @@
 import React from "react";
+import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./pages/home_page";
 import Register from "./pages/new_user";
 import Current from "./pages/current_user";
-import Cards from "./components/cards";
-import Image from "./components/image_card";
-
+import Cards from "../src/pages/beaches";
+import Imperial from "./pages/destinations/imperial";
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +14,11 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/current" element={<Current />} />
         <Route path="/cards" element={<Cards />} />
-        <Route path="/image" element={<Image />} />
+        <Route path="/imperial" element={<Imperial />} />
+        
+  
+        
+        
       </Routes>
     </BrowserRouter>
   );

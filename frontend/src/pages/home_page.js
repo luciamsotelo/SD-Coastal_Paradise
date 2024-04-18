@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from '../components/header';
-import Title from '../components/title';
+import React from "react";
+import Header from "../components/navigation";
+import Title from "../components/title";
 const homePage = () => {
   return (
     <div>
       <Header />
-      <Title/>
+      <Title />
     </div>
   );
 };

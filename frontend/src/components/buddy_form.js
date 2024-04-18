@@ -73,7 +73,7 @@ const MyForm = () => {
         />
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button href="http://localhost:3000/Cards" variant="primary" type="submit">
         Join the Community
       </Button>
     </Form>

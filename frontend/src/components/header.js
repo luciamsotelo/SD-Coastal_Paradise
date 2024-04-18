@@ -1,32 +1,17 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from "react";
 
-function topBar() {
+
+const header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home"></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link"></Nav.Link>
-            <NavDropdown title="beach bliss" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Log In</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Register
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3"></NavDropdown.Item>
-              
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-  
+    <div>
+    <h1 className="pt-2 text-center"
+                    style={{
+                      background: "#0095b6",
+                      fontSize: "75px",
+                      color: "#ffb79d",
+                      textShadow: "2px 5px 10px #0dba86",
+                      width: "100vw",}}>San Diego Coastal Paradise</h1></div>
+  )
 }
 
-export default topBar;
+export default header

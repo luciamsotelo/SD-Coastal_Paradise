@@ -1,6 +1,6 @@
-import Register from '../components/register_form';
-import React from 'react'
-import Header from '../components/header';
+import Register from "../components/buddy_form";
+import React from "react";
+import Header from "../components/navigation";
 
 const new_user = () => {
   return (
@@ -8,7 +8,7 @@ const new_user = () => {
       <Header />
       <Register />
     </div>
-  )
-}
+  );
+};
 
-export default new_user
+export default new_user;
