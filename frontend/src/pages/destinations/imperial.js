@@ -1,5 +1,6 @@
 import "../../App.css";
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Card from 'react-bootstrap/Card';
@@ -24,10 +25,10 @@ const imperial = () => {
           <div><strong>Facilities & Amenities:</strong> <p>Restrooms | Outdoor Shower | Shops and Dining | Lawns and Open Space | Outdoor Gym Equipment</p></div>
           <div><strong>Local Attractions:</strong> <p>Imperial Beach Pier | Tijuana River National Estuary | Veterans Park</p></div>
           <div><strong>Dog Friendly:</strong> <p>Very Dog Friendly City | Dogs are allowed in designated areas of the beach and leashed</p></div>
-        </Card.Text>
-        <Card.Text></Card.Text>
-      </Card.ImgOverlay>
-    </Card>
+          </Card.Text>
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+        </Card.ImgOverlay>
+      </Card>
       <Footer />
     </div>
     

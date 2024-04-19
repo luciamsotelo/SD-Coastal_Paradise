@@ -1,5 +1,6 @@
 import "../../App.css";
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Card from 'react-bootstrap/Card';
@@ -23,12 +24,10 @@ const coronado = () => {
           <div><strong>Facilities & Amenities:</strong> <p>Restrooms | Outdoor Shower | Shops and Dining | Close to Military Base</p></div>
           <div><strong>Local Attractions:</strong> <p>Segway Tour of Island | Ferry Landing | Lambs Theatre | Spreckels Park | Vietnam Unit Memorial Monument</p></div>
           <div><strong>Dog Friendly:</strong> <p>Very Dog Friendly City | They have a Dog Beach (located adjacent to North Island Navy Base)</p></div>
-        </Card.Text>
-        <Card.Text></Card.Text>
-      </Card.ImgOverlay>
-      
-    </Card>
-    
+          </Card.Text>
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+        </Card.ImgOverlay>
+      </Card>
         <Footer />
     </div>
     

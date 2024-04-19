@@ -1,5 +1,6 @@
 import "../../App.css";
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Card from 'react-bootstrap/Card';
@@ -23,12 +24,10 @@ const mission = () => {
           <div><strong>Facilities & Amenities:</strong> <p>Restrooms | Outdoor Shower | Rental Shops and Dining | Picnic Areas and Fire Pits </p></div>
           <div><strong>Local Attractions:</strong> <p>Famous Boardwalk | Belmont Park | Volleyball Courts | Gym with Ocean View</p></div>
           <div><strong>Dog Friendly:</strong> <p>Dog-friendly hours vary | Dogs must be leashed at all times</p></div>
-        </Card.Text>
-        <Card.Text></Card.Text>
-      </Card.ImgOverlay>
-      
-    </Card>
-
+          </Card.Text>
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+        </Card.ImgOverlay>
+      </Card>
         <Footer />
       
     </div>

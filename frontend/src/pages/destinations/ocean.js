@@ -1,5 +1,6 @@
 import "../../App.css";
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Card from 'react-bootstrap/Card';
@@ -23,11 +24,10 @@ const ocean = () => {
           <div><strong>Facilities & Amenities:</strong> <p>Restrooms | Outdoor Shower | Lawns and Open Space </p></div>
           <div><strong>Local Attractions:</strong> <p>Surfing | Swimming | Shopping | Dining</p></div>
           <div><strong>Dog Friendly:</strong> <p>Very Dog Friendly City | The only 24 hour Leash-free Dog Beach </p></div>
-        </Card.Text>
-        <Card.Text></Card.Text>
-      </Card.ImgOverlay>
-      
-    </Card>
+          </Card.Text>
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+        </Card.ImgOverlay>
+      </Card>
 
     <Footer />
       
