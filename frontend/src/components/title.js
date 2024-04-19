@@ -17,7 +17,10 @@ const title = () => {
                         fontSize:"23px",
                         textAlign: "justify",
                         fontFamily: "trebuchet ms",}}>
-                  "Welcome to San Diego Coastal Paradise – where every wave brings new adventures! Whether you're dipping your toes for the first time or a seasoned beachcomber, join our community of beach buddies today by sharing your name and email. Dive into the ocean of experiences awaiting you! Already part of our crew? Welcome back! Let's start beachcombing together!" </p>
+                  "Welcome to San Diego Coastal Paradise – where every wave brings new adventures! Our app is your ultimate guide to exploring the breathtaking beaches of San Diego! From the tranquil shores of Imperial Beach to the vibrant atmosphere of Oceanside, our app invites you on a journey along the stunning coastline. Discover fascinating information and fun facts about each beach, from Coronado's iconic Hotel del Coronado to the laid-back charm of Ocean Beach. Immerse yourself in the beauty of La Jolla Shores, feel the surf at Encinitas Beach, and soak in the sun at Carlsbad Beach. Whether you're a local or a visitor, San Diego Coastal Paradise is your go-to companion for experiencing the unparalleled splendor of San Diego's coastal gems. Start your adventure today and let the waves of excitement carry you to unforgettable seaside memories! 
+                  <br></br> 
+                  <br></br>
+                  Whether you're dipping your toes for the first time or a seasoned beachcomber, join our community of beach buddies today by sharing your name and email. Dive into the ocean of experiences awaiting you! Already part of our crew? Welcome back! Let's start beachcombing together!" </p>
       <div className="container" style={{paddingTop:"75px"}}>
         <div className="row">
           <div className="col">
