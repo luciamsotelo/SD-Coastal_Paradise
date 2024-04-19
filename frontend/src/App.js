@@ -15,6 +15,7 @@ import Encinitas from "./pages/destinations/encinitas";
 import Carlsbad from "./pages/destinations/carlsbad";
 import Oceanside from "./pages/destinations/oceanside";
 import About from "./pages/about"
+import Contact from "./pages/contact"
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         <Route path="/carlsbad" element={<Carlsbad />} />
         <Route path="/oceanside" element={<Oceanside />} />
         <Route path="/about" element={<About />} />
-       
+        <Route path="/contact" element={<Contact />} />
         
   
         

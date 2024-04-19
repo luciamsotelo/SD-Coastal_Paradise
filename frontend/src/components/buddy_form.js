@@ -24,7 +24,13 @@ const MyForm = () => {
   };
 
   return (
-    <div style={{ backgroundImage: 'url(https://st.depositphotos.com/1757635/1758/i/450/depositphotos_17588905-stock-photo-welcome.jpg)', backgroundSize: 'cover', maxWidth: '100%', maxHeight: '75%', padding: '110px 100px 800px 100px' }}>
+    <div style={{ backgroundImage: 'url(https://static4.depositphotos.com/1000865/430/i/450/depositphotos_4307402-stock-photo-word-welcome-on-beach.jpg)', backgroundSize: 'cover', maxWidth: '100%', maxHeight: '75%', padding: '110px 100px 800px 100px' }}>
+
+<p>"Welcome aboard! Get ready to embark on an epic beachcombing journey with us! Whether you're a seasoned surfer or a landlubber looking to dip your toes into the digital waves, there's something for everyone here at San Diego Coastal Paradise. Explore the stunning beaches of San Diego and uncover hidden treasures along the coast. Dive into our vibrant community and discover the endless possibilities that await you. From making lifelong beach buddies to catching the perfect wave, the adventure starts now!</p>
+<br></br>
+<br></br>
+
+
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="formFirstName">
         <Form.Label>First Name</Form.Label>

@@ -33,7 +33,7 @@ function GridExample() {
     <Row xs={1} md={2} className="g-4">
       {cardsData.map((card, idx) => (
         <Col key={idx}>
-          <Card className="" style={{padding:"15px", border:"3px solid #ffb79d", margin:"50px"}}>
+          <Card className="" style={{padding:"15px", border:"5px solid #ffb79d", margin:"3px 3px 3px 3px"}}>
             {/* You can adjust the card's layout as needed */}
             <Card.Img variant="top" src={card.image} />
             <Card.Body>
