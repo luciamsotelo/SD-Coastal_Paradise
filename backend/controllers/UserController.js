@@ -1,3 +1,4 @@
+//controllers folder, UserController.js file
 // Import necessary modules or models
 const User = require('../models/member'); // Assuming you have a User model
 
