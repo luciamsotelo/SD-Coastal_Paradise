@@ -25,7 +25,7 @@ const oceanside = () => {
           <div><strong>Local Attractions:</strong> <p>Sandy Shores Ideal for Sunbathing | Beach Volleyball, Sandcastle Building | Oceanside Pier | Oceanside Harbor with Marina, Shops and Restaurants | Boat Rentals | Whale Watching Tours | Historic Train Station </p></div>
           <div><strong>Dog Friendly:</strong> <p>Dogs are allowed on Beach before 9am to 6pm | Dogs must be leashed </p></div>
           </Card.Text>
-          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 825px 10px 825px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
         </Card.ImgOverlay>
       </Card>
 

@@ -26,7 +26,7 @@ const imperial = () => {
           <div><strong>Local Attractions:</strong> <p>Imperial Beach Pier | Tijuana River National Estuary | Veterans Park</p></div>
           <div><strong>Dog Friendly:</strong> <p>Very Dog Friendly City | Dogs are allowed in designated areas of the beach and leashed</p></div>
           </Card.Text>
-          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 825px 10px 825px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
         </Card.ImgOverlay>
       </Card>
       <Footer />

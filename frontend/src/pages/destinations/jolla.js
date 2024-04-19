@@ -25,7 +25,7 @@ const lajolla = () => {
           <div><strong>Local Attractions:</strong> <p>Scenic Cove with Gentle Waves, Perfect for Swimming, Snorkling and Beginner Surfing | Kellogg Park | Scrips Pier | Birch Aquarium</p></div>
           <div><strong>Dog Friendly:</strong> <p>Dogs are allowed on the on Beach before 9am and after 4pm | Dogs must be leashed </p></div>
           </Card.Text>
-          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 825px 10px 825px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
         </Card.ImgOverlay>
       </Card>
         <Footer />

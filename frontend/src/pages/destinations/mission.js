@@ -25,7 +25,7 @@ const mission = () => {
           <div><strong>Local Attractions:</strong> <p>Famous Boardwalk | Belmont Park | Volleyball Courts | Gym with Ocean View</p></div>
           <div><strong>Dog Friendly:</strong> <p>Dog-friendly hours vary | Dogs must be leashed at all times</p></div>
           </Card.Text>
-          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 825px 10px 825px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
         </Card.ImgOverlay>
       </Card>
         <Footer />

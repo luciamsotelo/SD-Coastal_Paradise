@@ -25,7 +25,7 @@ const coronado = () => {
           <div><strong>Local Attractions:</strong> <p>Segway Tour of Island | Ferry Landing | Lambs Theatre | Spreckels Park | Vietnam Unit Memorial Monument</p></div>
           <div><strong>Dog Friendly:</strong> <p>Very Dog Friendly City | They have a Dog Beach (located adjacent to North Island Navy Base)</p></div>
           </Card.Text>
-          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 825px 10px 825px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
         </Card.ImgOverlay>
       </Card>
         <Footer />

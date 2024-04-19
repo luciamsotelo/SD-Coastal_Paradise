@@ -26,26 +26,30 @@ function GridExample() {
       image: 'https://t4.ftcdn.net/jpg/01/63/58/67/360_F_163586730_6DGv1mQFOR0Pm3SxgpwY6HTCmEw9emFa.jpg',
       description: 'Sebastian Damas is a dynamic Backend Software Engineer at MeltWater, where their expertise shines in crafting innovative solutions. Armed with a B.S. in Mathematical Science from the University of California, Santa Barbara, Sebastian\'s analytical prowess drives their success. Beyond coding, they find solace in various hobbies, from conquering miles on the running trails to sculpting his physique through workouts. Sebastian\'s culinary adventures in the kitchen are matched only by their love for music festivals, where they immerse themselves in electrifying beats. With a zest for life and a passion for code, Sebastian embraces each day with boundless energy and creativity.'
     }
-
   ];
 
   return (
-    <Row xs={1} md={2} className="g-4">
-      {cardsData.map((card, idx) => (
-        <Col key={idx}>
-          <Card className="" style={{padding:"15px", border:"5px solid #ffb79d", margin:"3px 3px 3px 3px"}}>
-            {/* You can adjust the card's layout as needed */}
-            <Card.Img variant="top" src={card.image} />
-            <Card.Body>
-              <Card.Title>{card.name}</Card.Title>
-              <Card.Text>
-                {card.description}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+    <>
+      <div style={{ padding: "1px", margin: "30px 10px 3px 10px", textAlign: "justify" }}>
+        <p>"Welcome to San Diego Coastal Paradise, where every seashell tells a story and every wave beckons for adventure! We're the team behind this digital oasis, a group of passionate coastal enthusiasts dedicated to bringing the sun-soaked shores of San Diego right to your fingertips. With a deep love for sandy toes and ocean breezes, we've crafted this app as a tribute to the beauty and charm of California's coastline. Join us on this sandy journey as we navigate the tides of technology and explore the endless horizons of beachcombing bliss."</p>
+      </div>
+      <Row xs={1} md={2} className="g-4">
+        {cardsData.map((card, idx) => (
+          <Col key={idx}>
+            <Card className="" style={{ padding: "15px", border: "5px solid #ffb79d", margin: "10px" }}>
+              {/* You can adjust the card's layout as needed */}
+              <Card.Img variant="top" src={card.image} />
+              <Card.Body>
+                <Card.Title>{card.name}</Card.Title>
+                <Card.Text>
+                  {card.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </>
   );
 }
 

@@ -25,7 +25,7 @@ const ocean = () => {
           <div><strong>Local Attractions:</strong> <p>Surfing | Swimming | Shopping | Dining</p></div>
           <div><strong>Dog Friendly:</strong> <p>Very Dog Friendly City | The only 24 hour Leash-free Dog Beach </p></div>
           </Card.Text>
-          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 635px 10px 635px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
+          <Link to="/beaches" className="btn btn-info" style={{margin:"60px 825px 10px 825px", textAlign:"center", display:"block", padding:"10px"}}>Explore More Beaches</Link> {/* Link to navigate back to beaches page */}
         </Card.ImgOverlay>
       </Card>
 
