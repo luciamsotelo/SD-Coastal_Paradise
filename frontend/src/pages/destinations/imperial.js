@@ -3,12 +3,14 @@ import React from 'react';
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Card from 'react-bootstrap/Card';
+import Footer from "../../components/footer";
 
 const imperial = () => {
   return (
     <div>
       <Navigation/>
       <Header/>
+      
       
     <Card className="bg-dark text-white" style={{margin:"15px"}}>
       <Card.Img src="https://www.imperialbeachca.gov/ImageRepository/Document?documentID=84" alt="Card image" />
@@ -25,10 +27,10 @@ const imperial = () => {
         </Card.Text>
         <Card.Text></Card.Text>
       </Card.ImgOverlay>
-      
     </Card>
-      
+      <Footer />
     </div>
+    
     
   )
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Card from 'react-bootstrap/Card';
+import Footer from "../../components/footer";
 
 const coronado = () => {
   return (
@@ -27,7 +28,8 @@ const coronado = () => {
       </Card.ImgOverlay>
       
     </Card>
-      
+    
+        <Footer />
     </div>
     
   )
