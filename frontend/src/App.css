@@ -1,7 +1,39 @@
+/* App.css */
+
 body {
-  background-color: #ffb79d;
+  background-color: #ffeae3 !important;
 }
 
+/* Style for the form container */
+.form-container {
+  background-image: url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/122785/122785_00_2x.jpg?20170602013312);
+  background-size: cover;
+  padding: 110px 100px 800px 100px; /* Adjust padding as needed */
+}
 
-@media (min-width: 360px) and (min-height: 720px) {
+/* Style for the welcome message */
+.welcome-message {
+  background: rgba(0, 149, 182, 0);
+  padding: 20px 30px;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 767px) {
+  .form-container {
+    padding: 25px; /* Adjust padding for smaller devices */
+  }
+
+  .pt-2 {
+    font-size: 12vw !important;
+  }
+
+  .welcome {
+    font-size: 14px !important;
+    padding: 25px !important;
+  }
+
+  .welcome-message {
+    padding: 75px 2px 75px 20px !important;
+    font-size: 14px !important;
+  }
 }

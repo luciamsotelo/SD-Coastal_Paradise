@@ -28,37 +28,56 @@ const MyForm = () => {
   };
 
   return (
-    <div style={{ backgroundImage: 'url(https://static4.depositphotos.com/1000865/430/i/450/depositphotos_4307402-stock-photo-word-welcome-on-beach.jpg)', backgroundSize: 'cover', maxWidth: '100%', maxHeight: '75%', padding: '110px 100px 800px 100px' }}>
+    <div style={{ 
+      backgroundImage: 'url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/sandy-beach-morning-kevin-smith.jpg)', 
+      backgroundRepeat: 'no-repeat', // Prevent background image from repeating
+      backgroundSize: 'cover', // Cover the entire container
+      width: '100%',
+      height: '100vh', // Fill the entire viewport height
+      padding: '20px',  // Adjust padding as needed
+      textAlign: 'justify',
+    }}>
 
-<p>"Welcome aboard! Get ready to embark on an epic beachcombing journey with us! Whether you're a seasoned surfer or a landlubber looking to dip your toes into the digital waves, there's something for everyone here at San Diego Coastal Paradise. Explore the stunning beaches of San Diego and uncover hidden treasures along the coast. Dive into our vibrant community and discover the endless possibilities that await you. From making lifelong beach buddies to catching the perfect wave, the adventure starts now!</p>
-<br></br>
-<br></br>
+      <p style={{color: 'black'}}><strong>"Welcome aboard! Whether you're a seasoned surfer or a beachcombing novice, join us at San Diego Coastal Paradise. Explore stunning beaches, uncover hidden treasures, and dive into our vibrant community. From making friends to catching waves, the adventure starts now!</strong></p>
+      <br />
+      <br />
 
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="formFirstName">
+          <Form.Label style={{color: 'black'}}>First Name</Form.Label>
+          <Form.Control 
+            type="text" 
+            placeholder="Enter your first name" 
+            name="firstName" 
+            value={formData.firstName} 
+            onChange={handleChange} 
+            required 
+          />
+        </Form.Group>
 
-    <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formFirstName">
-        <Form.Label>First Name</Form.Label>
-        <Form.Control 
-          type="text" 
-          placeholder="Enter your first name" 
-          name="firstName" 
-          value={formData.firstName} 
-          onChange={handleChange} 
-          required 
-        />
-      </Form.Group>
+        <Form.Group controlId="formLastName">
+          <Form.Label style={{color: 'black'}}>Last Name</Form.Label>
+          <Form.Control 
+            type="text" 
+            placeholder="Enter your last name" 
+            name="lastName" 
+            value={formData.lastName} 
+            onChange={handleChange} 
+            required 
+          />
+        </Form.Group>
 
-      <Form.Group controlId="formLastName">
-        <Form.Label>Last Name</Form.Label>
-        <Form.Control 
-          type="text" 
-          placeholder="Enter your last name" 
-          name="lastName" 
-          value={formData.lastName} 
-          onChange={handleChange} 
-          required 
-        />
-      </Form.Group>
+        <Form.Group controlId="formEmail">
+          <Form.Label style={{color: 'black'}}>Email</Form.Label>
+          <Form.Control 
+            type="email" 
+            placeholder="Enter your email" 
+            name="email" 
+            value={formData.email} 
+            onChange={handleChange} 
+            required 
+          />
+        </Form.Group>
 
       <Form.Group controlId="formEmail">
         <Form.Label>Email</Form.Label>

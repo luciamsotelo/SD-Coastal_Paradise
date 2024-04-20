@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 
 const Footer = () => {
     return (
-        <div className="footer d-flex flex-column align-items-center mt-3" style={{backgroundColor: "#ffb79d", fontSize:"20px"}}>
+        <div className="footer d-flex flex-column align-items-center mt-3" style={{backgroundColor: "#ffb79d", fontSize:"20px", position: "fixed", bottom: 0, width: "100%", paddingTop: "10px"}}>
             <Nav defaultActiveKey="/home" as="ul">
                 <Nav.Item as="li">
                     <Nav.Link href="/about">About Us</Nav.Link>

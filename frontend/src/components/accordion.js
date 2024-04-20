@@ -49,6 +49,7 @@ function GridExample() {
           </Col>
         ))}
       </Row>
+      <div style={{ height: "100px" }}></div> {/* Add a spacer */}
     </>
   );
 }
