@@ -1,3 +1,4 @@
+//models folder member.js file
 'use strict';
 const { Model } = require('sequelize');
 
