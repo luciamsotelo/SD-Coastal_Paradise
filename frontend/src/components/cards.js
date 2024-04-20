@@ -68,7 +68,7 @@ function GridExample() {
     <Row xs={1} md={2} lg={3} className="g-4">
       {cardsData.map((card, idx) => (
         <Col key={idx}>
-          <Card style={{border: '10px outset #ffb79d', margin: '10px 30px 10px 30px', padding: '10px 10px 10px 10px' }}>
+          <Card style={{ border: '10px outset #ffb79d', margin: '10px 30px 10px 30px', padding: '10px 10px 10px 10px', height: '100%' }}>
             <Card.Img variant="top" src={card.image} />
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>
