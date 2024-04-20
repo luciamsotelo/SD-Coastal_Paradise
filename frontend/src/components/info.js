@@ -4,8 +4,10 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 function ContactInfo() {
   return (
-    <Card className='' style={{background: 'lightblue', padding: '50px 20px'}}>
-      <div className='' style={{marginBottom: '20px', textAlign: 'justify', fontSize: '15px'}}><p>"Thank you for visiting San Diego Coastal Paradise! We hope you enjoyed exploring the stunning beaches and discovering the beauty of San Diego's coastline. We would love to hear from you! Whether you have feedback, questions, or just want to share your beach adventures, please don't hesitate to reach out. Your thoughts and experiences are invaluable to us as we strive to enhance your coastal paradise experience. Get in touch with us today and let's continue this beachcombing journey together!"</p></div>
+    <Card className='' style={{ background: 'lightblue', padding: '25px', margin: '5px' }}>
+      <div className='' style={{ marginBottom: '20px', textAlign: 'justify', fontSize: '15px' }}>
+        <p>"Thank you for visiting San Diego Coastal Paradise! We hope you enjoyed exploring the stunning beaches and discovering the beauty of San Diego's coastline. We would love to hear from you! Whether you have feedback, questions, or just want to share your beach adventures, please don't hesitate to reach out. Your thoughts and experiences are invaluable to us as we strive to enhance your coastal paradise experience. Get in touch with us today and let's continue this beachcombing journey together!"</p>
+      </div>
       <Card.Body>
         <Card.Title style={{textAlign: 'center', fontSize: '20px', marginBottom: '20px', color: '#0dba86'}}><strong>Contact Information</strong></Card.Title>
         <ListGroup variant="flush" style={{fontSize: '16px', marginBottom: '20px', textAlign: 'center'}}>
@@ -35,7 +37,8 @@ function ContactInfo() {
           </ListGroup.Item>
         </ListGroup>
       </Card.Body>
-      <div className="container" style={{ padding: "1px" }}>
+
+      <div className="container" style={{ paddingTop: "1px", paddingBottom: "35px", marginBottom: '30px' }}> {/* Added marginBottom */}
         <div className="row">
           <div className="col">
             <img

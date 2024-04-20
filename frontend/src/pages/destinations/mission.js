@@ -13,7 +13,7 @@ const Mission = () => {
       <Row>
         <Col md={6}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Img src="https://cloudinary-assets.dostuffmedia.com/res/dostuff-media/image/upload/venue-17100/1434667193.jpg" alt="Card image" style={{ height: "100%" }} />
+            <Card.Img src="https://82365a9c799400a5d0fb-9273b35808336b1a8f5ab2f5697faad3.ssl.cf1.rackcdn.com/_comfort/media/belmont-park-roller-coaster-6019a1ba7016d.jpg" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
               <Card.Title style={{ textAlign: "center", marginTop: "40%" }}>MISSION BEACH <br /><br /> 32.7707° N, 117.2514° W</Card.Title>
             </Card.ImgOverlay>
