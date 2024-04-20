@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import axios from "axios"
 
 const MyForm = () => {
   const [formData, setFormData] = useState({
@@ -11,16 +12,19 @@ const MyForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    console.log("state: ", formData)
     setFormData(prevState => ({
       ...prevState,
       [name]: value
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log(formData);
+
+    const res = await axios.get("http://localhost:3001/user1")
+    console.log(res.data);
   };
 
   return (
@@ -80,7 +84,7 @@ const MyForm = () => {
         />
       </Form.Group>
       <br></br>
-      <Button href="http://localhost:3000/Cards" variant="info" type="submit">
+      <Button variant="info" type="submit" onClick={handleSubmit}>
         Join the Community
       </Button>
       

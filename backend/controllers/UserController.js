@@ -1,6 +1,7 @@
 //controllers folder, UserController.js file
 // Import necessary modules or models
-const User = require('../models/member'); // Assuming you have a User model
+const User = require("../models").Member;
+
 
 // User controller methods
 const UserController = {
@@ -9,7 +10,7 @@ const UserController = {
     try {
       // Extract user data from request body
       const { firstName, lastName, email, password } = req.body;
-      
+      console.log(req.body)
       // Create a new user in the database
       const newUser = await User.create({
         firstName,
@@ -41,7 +42,8 @@ const UserController = {
   // Get user by ID
   getUserById: async (req, res) => {
     try {
-      // Logic to fetch user data by ID
+      const userID = req.params.id
+      res.send(userID)
     } catch (error) {
       // Handle errors
       console.error('Error fetching user by ID:', error);

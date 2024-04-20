@@ -1,7 +1,9 @@
+module.exports =
 {
+  
   "development": {
     "username": "postgres",
-    "password": "new_password",
+    "password": "superpassword",
     "database": "sd-coastal-paradise",
     "host": "127.0.0.1",
     "dialect": "postgres"
