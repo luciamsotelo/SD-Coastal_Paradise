@@ -31,13 +31,19 @@ const UserController = {
   // Authenticate user login
   loginUser: async (req, res) => {
     try {
-      // Logic to authenticate user login (e.g., compare hashed passwords)
+      const { email, password } = req.body;
+      const user = await User.findOne({ where: { email, password } }); // Check if both email and password match directly
+      if (!user) {
+        return res.status(401).json({ message: 'Authentication failed' }); // Send an error if no match is found
+      }
+      res.json({ message: 'Login successful', user: { firstName: user.firstName } }); // Send success message and user's first name
     } catch (error) {
-      // Handle errors
       console.error('Error logging in user:', error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(500).json({ message: 'Internal server error' }); // Handle server errors
     }
   },
+  
+  
 
   // Get user by ID
   getUserById: async (req, res) => {

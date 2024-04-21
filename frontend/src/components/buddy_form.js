@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import axios from "axios"
+import { Form, Button, Modal, Alert } from 'react-bootstrap';
+import axios from "axios";
 
 const MyForm = () => {
   const [formData, setFormData] = useState({
@@ -9,42 +9,67 @@ const MyForm = () => {
     email: '',
     password: ''
   });
+  
+  const [showModal, setShowModal] = useState(false); 
+  const [error, setError] = useState(""); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log("state: ", formData)
     setFormData(prevState => ({
       ...prevState,
       [name]: value
     }));
   };
 
-  const handleSubmit = async(e) => {
-    e.preventDefault();
-    // Handle form submission here
-
-    const res = await axios.get("http://localhost:3001/user1")
-    console.log(res.data);
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+    setError(""); 
+  
+    try {
+      
+      const response = await axios.post("http://localhost:3001/api/register", formData);
+      console.log("Response: ", response.data);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: ''
+      });
+      setShowModal(true); 
+    } catch (error) {
+      console.error("Failed to register user:", error);
+      setError("Failed to register user. Please try again."); 
+    }
   };
 
+  const handleClose = () => setShowModal(false); 
+
   return (
-    <div style={{ 
+    <div style={{
       backgroundImage: 'url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/sandy-beach-morning-kevin-smith.jpg)', 
-      backgroundRepeat: 'no-repeat', // Prevent background image from repeating
-      backgroundSize: 'cover', // Cover the entire container
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       width: '100%',
-      height: '100vh', // Fill the entire viewport height
-      padding: '20px',  // Adjust padding as needed
+      height: '100vh',
+      padding: '20px',
       textAlign: 'justify',
     }}>
-
-      <p style={{color: 'black'}}><strong>"Welcome aboard! Whether you're a seasoned surfer or a beachcombing novice, join us at San Diego Coastal Paradise. Explore stunning beaches, uncover hidden treasures, and dive into our vibrant community. From making friends to catching waves, the adventure starts now!</strong></p>
-      <br />
-      <br />
-
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Registration Successful</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>User has been added successfully!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="info" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      {error && <Alert variant="danger">{error}</Alert>} {/* Display error message if there is an error */}
       <Form onSubmit={handleSubmit}>
+        {/* Form fields */}
         <Form.Group controlId="formFirstName">
-          <Form.Label style={{color: 'black'}}>First Name</Form.Label>
+          <Form.Label>First Name</Form.Label>
           <Form.Control 
             type="text" 
             placeholder="Enter your first name" 
@@ -54,9 +79,8 @@ const MyForm = () => {
             required 
           />
         </Form.Group>
-
         <Form.Group controlId="formLastName">
-          <Form.Label style={{color: 'black'}}>Last Name</Form.Label>
+          <Form.Label>Last Name</Form.Label>
           <Form.Control 
             type="text" 
             placeholder="Enter your last name" 
@@ -66,9 +90,8 @@ const MyForm = () => {
             required 
           />
         </Form.Group>
-
         <Form.Group controlId="formEmail">
-          <Form.Label style={{color: 'black'}}>Email</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control 
             type="email" 
             placeholder="Enter your email" 
@@ -78,38 +101,25 @@ const MyForm = () => {
             required 
           />
         </Form.Group>
-
-      <Form.Group controlId="formEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control 
-          type="email" 
-          placeholder="Enter your email" 
-          name="email" 
-          value={formData.email} 
-          onChange={handleChange} 
-          required 
-        />
-      </Form.Group>
-
-      <Form.Group controlId="formPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control 
-          type="password" 
-          placeholder="Enter your password" 
-          name="password" 
-          value={formData.password} 
-          onChange={handleChange} 
-          required 
-        />
-      </Form.Group>
-      <br></br>
-      <Button variant="info" type="submit" onClick={handleSubmit}>
-        Join the Community
-      </Button>
-      
-    </Form>
+        <Form.Group controlId="formPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control 
+            type="password" 
+            placeholder="Enter your password" 
+            name="password" 
+            value={formData.password} 
+            onChange={handleChange} 
+            required 
+          />
+        </Form.Group>
+        <br></br>
+        <Button variant="info" type="submit">
+          Join the Community
+        </Button>
+      </Form>
     </div>
   );
 };
 
 export default MyForm;
+
