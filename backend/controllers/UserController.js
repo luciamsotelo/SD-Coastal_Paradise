@@ -1,6 +1,7 @@
 //controllers folder, UserController.js file
 // Import necessary modules or models
-const User = require('../models/member'); // Assuming you have a User model
+const User = require("../models").Member;
+
 
 // User controller methods
 const UserController = {
@@ -9,7 +10,7 @@ const UserController = {
     try {
       // Extract user data from request body
       const { firstName, lastName, email, password } = req.body;
-      
+      console.log(req.body)
       // Create a new user in the database
       const newUser = await User.create({
         firstName,
@@ -30,18 +31,25 @@ const UserController = {
   // Authenticate user login
   loginUser: async (req, res) => {
     try {
-      // Logic to authenticate user login (e.g., compare hashed passwords)
+      const { email, password } = req.body;
+      const user = await User.findOne({ where: { email, password } }); // Check if both email and password match directly
+      if (!user) {
+        return res.status(401).json({ message: 'Authentication failed' }); // Send an error if no match is found
+      }
+      res.json({ message: 'Login successful', user: { firstName: user.firstName } }); // Send success message and user's first name
     } catch (error) {
-      // Handle errors
       console.error('Error logging in user:', error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(500).json({ message: 'Internal server error' }); // Handle server errors
     }
   },
+  
+  
 
   // Get user by ID
   getUserById: async (req, res) => {
     try {
-      // Logic to fetch user data by ID
+      const userID = req.params.id
+      res.send(userID)
     } catch (error) {
       // Handle errors
       console.error('Error fetching user by ID:', error);
