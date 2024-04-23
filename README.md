@@ -58,6 +58,10 @@ We welcome contributions from the community! If you'd like to contribute to San 
 3. Make your changes and ensure that tests pass.
 4. Submit a pull request with a clear description of your changes.
 
+Contributors:
+  Carlos Hernandez - frontend, backend contributions, UX/UI
+  Lucia Sotelo - frontend, backend contributions, UX/UI
+
 ## License
 
 This project is licensed under the MIT License.
@@ -65,5 +69,10 @@ This project is licensed under the MIT License.
 ## Contact
 
 If you have any questions, feedback, or suggestions, feel free to contact us at [info@sdcoastalparadise.com](mailto:info@sdcoastalparadise.com).
+
+## About
+
+San Diego Coastal Paradise was created with the aim of providing beach enthusiasts with a comprehensive guide to the stunning beaches of San Diego. Our goal is to make it easy for both locals and visitors to discover, explore, and enjoy the beauty of San Diego's coastline.
+
 
 
