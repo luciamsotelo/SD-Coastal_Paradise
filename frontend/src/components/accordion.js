@@ -17,7 +17,7 @@ function GridExample() {
       description: 'Lucia Sotelo is a dedicated front-end developer and UX/UI specialist with a keen eye for detail and a passion for crafting exceptional user experiences. With expertise in HTML, CSS, and JavaScript, Lucia brings designs to life with fluidity and elegance. Her proficiency in modern front-end frameworks such as React and Angular enables her to create intuitive and responsive interfaces that captivate users. Lucia excels in wireframing, prototyping, and conducting usability tests to optimize user journeys. With a commitment to innovation and user-centric design, Lucia elevates digital experiences to new heights of excellence.'
     },
     {
-      name: 'Ting-Yu Cheng',
+      name: 'Ting-Yu Chen',
       image: 'https://i.pinimg.com/736x/8b/9c/d1/8b9cd167c0366c0e24a9ef9b82b38784.jpg',
       description: 'Ting-Yu, originally an artist, embarked on a transformative journey into education after sharing expertise in fine art and English instruction in Japan. Driven by insatiable curiosity, Ting-Yu delved into coding post-graduation, igniting a passion. Graduating from a full-stack engineering boot camp, they transitioned seamlessly into a full-stack software engineer role, thriving in the field. Fluent in English, Mandarin Chinese, Japanese, and JavaScript, Ting-Yu masters Taiwanese, Spanish, and delves into C++. Beyond coding, they find fulfillment teaching and cherish time with their canine companions, adding warmth and joy to daily adventures.'
     },
@@ -36,12 +36,12 @@ function GridExample() {
       <Row xs={1} md={2} className="g-4">
         {cardsData.map((card, idx) => (
           <Col key={idx}>
-            <Card className="" style={{ padding: "15px", border: "5px solid #ffb79d", margin: "10px" }}>
+            <Card className="" style={{ padding: "15px", border: "5px solid #ffb79d", margin: "10px", height: "100%" }}>
               {/* You can adjust the card's layout as needed */}
               <Card.Img variant="top" src={card.image} />
-              <Card.Body>
-                <Card.Title>{card.name}</Card.Title>
-                <Card.Text>
+              <Card.Body style={{ height: "100%" }}>
+                <Card.Title style={{ height: "20%", overflow: "hidden" }}>{card.name}</Card.Title>
+                <Card.Text style={{ height: "80%", overflowY: "auto" }}>
                   {card.description}
                 </Card.Text>
               </Card.Body>
