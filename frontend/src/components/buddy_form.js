@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Modal, Alert } from 'react-bootstrap';
 import axios from "axios";
+import { useNavigate } from 'react-router-dom'; 
 
 const MyForm = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +13,7 @@ const MyForm = () => {
   
   const [showModal, setShowModal] = useState(false); 
   const [error, setError] = useState(""); 
-
+  const navigate = useNavigate();  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -35,7 +36,11 @@ const MyForm = () => {
         email: '',
         password: ''
       });
-      setShowModal(true); 
+      setShowModal(true);
+      setTimeout(() => {
+        setShowModal(false); 
+        navigate('/beaches'); 
+      }, 4000); 
     } catch (error) {
       console.error("Failed to register user:", error);
       setError("Failed to register user. Please try again."); 

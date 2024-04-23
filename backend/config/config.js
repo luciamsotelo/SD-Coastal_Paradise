@@ -2,10 +2,10 @@ module.exports =
 {
   
   "development": {
-    "username": "postgres",
-    "password": "new_password",
+    "username": process.env.DB_USER,
+    "password": process.env.DB_PASS,
     "database": "sd-coastal-paradise",
-    "host": "127.0.0.1",
+    "host": process.env.DB_HOST,
     "dialect": "postgres"
   },
   "test": {
