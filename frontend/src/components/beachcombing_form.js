@@ -36,11 +36,11 @@ function Login() {
   return (
     <div>
       <Modal show={showModal} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Welcome Back!</Modal.Title>
+        <Modal.Header closeButton style={{ backgroundColor: "#0095b6", color: "#ffb79d"}}>
+          <Modal.Title><strong>Shore is nice to Sea you!</strong></Modal.Title>
         </Modal.Header>
-        <Modal.Body>Welcome back, {userName}!</Modal.Body>
-        <Modal.Footer>
+        <Modal.Body><strong>{userName}!</strong></Modal.Body>
+        <Modal.Footer style={{}} > 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚
           <Button variant="info" onClick={handleClose}>Close</Button>
         </Modal.Footer>
       </Modal>

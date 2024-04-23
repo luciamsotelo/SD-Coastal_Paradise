@@ -55,11 +55,11 @@ const MyForm = () => {
       textAlign: 'justify',
     }}>
       <Modal show={showModal} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Registration Successful</Modal.Title>
+        <Modal.Header closeButton style={{ backgroundColor: "#0095b6", color: "#ffb79d"}}>
+          <Modal.Title ><strong>Welcome Aboard! </strong></Modal.Title>
         </Modal.Header>
-        <Modal.Body>User has been added successfully!</Modal.Body>
-        <Modal.Footer>
+        <Modal.Body><strong>You've officially set Sail into our Sunny Shores!</strong></Modal.Body>
+        <Modal.Footer> 
           <Button variant="info" onClick={handleClose}>
             Close
           </Button>
