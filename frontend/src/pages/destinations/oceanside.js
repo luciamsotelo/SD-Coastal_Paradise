@@ -11,7 +11,7 @@ const Oceanside = () => {
       <Navigation />
       <Header />
       <Row>
-        <Col md={6}>
+        <Col md={6} style={{ marginBottom: "15px" }}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
             <Card.Img src="https://patch.com/img/cdn20/shutterstock/54855/20230614/073927/styles/patch_image/public/shutterstock-1053673922___14193112108.jpg" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
@@ -20,9 +20,9 @@ const Oceanside = () => {
           </Card>
         </Col>
         <Col md={6}>
-          <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Body>
-              <Card.Title style={{ textAlign: "center" }}>Details</Card.Title>
+          <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%"}}>
+          <Card.Body style={{ marginBottom: "30px"}}>
+              <Card.Title style={{ textAlign: "center"}}>Details</Card.Title>
               <Card.Text>
                 <div><strong>Address:</strong> <p>Oceanside, CA 92054</p></div>
                 <div><strong>Hours of Operation:</strong> <p>24 hours</p></div>

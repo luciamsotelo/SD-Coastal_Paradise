@@ -11,7 +11,7 @@ const Encinitas = () => {
       <Navigation />
       <Header />
       <Row>
-        <Col md={6}>
+      <Col md={6} style={{ marginBottom: "15px" }}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
             <Card.Img src="https://cdn.thecrazytourist.com/wp-content/uploads/2020/12/ccimage-shutterstock_1172798599.jpg" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
@@ -21,7 +21,7 @@ const Encinitas = () => {
         </Col>
         <Col md={6}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Body>
+          <Card.Body style={{ marginBottom: "30px"}}>
               <Card.Title style={{ textAlign: "center" }}>Details</Card.Title>
               <Card.Text>
                 <div><strong>Address:</strong> <p>Encinitas, CA 92024</p></div>

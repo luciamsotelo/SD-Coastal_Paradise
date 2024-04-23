@@ -11,7 +11,7 @@ const Mission = () => {
       <Navigation />
       <Header />
       <Row>
-        <Col md={6}>
+      <Col md={6} style={{ marginBottom: "15px" }}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
             <Card.Img src="https://82365a9c799400a5d0fb-9273b35808336b1a8f5ab2f5697faad3.ssl.cf1.rackcdn.com/_comfort/media/belmont-park-roller-coaster-6019a1ba7016d.jpg" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
@@ -21,7 +21,7 @@ const Mission = () => {
         </Col>
         <Col md={6}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Body>
+          <Card.Body style={{ marginBottom: "30px"}}>
               <Card.Title style={{ textAlign: "center" }}>Details</Card.Title>
               <Card.Text>
                 <div><strong>Address:</strong> <p> Mission Beach, CA 92109</p></div>

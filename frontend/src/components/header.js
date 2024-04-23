@@ -6,12 +6,12 @@ const Header = () => {
       className="pt-2 text-center"
       style={{
         background: "#0095b6",
-        fontSize: "5vw", // Adjust font size based on viewport width
+        fontSize: "5vw", 
         color: "#ffb79d",
         textShadow: "2px 5px 10px #0dba86",
-        width: "100vw", // Take up the whole width of the viewport
-        margin: 0, // Remove default margin
-        padding: "20px 0", // Add padding to the top and bottom
+        width: "100vw", 
+        margin: 0,
+        padding: "20px 0", 
       }}
     >
       San Diego Coastal Paradise

@@ -11,7 +11,7 @@ const Carlsbad = () => {
       <Navigation />
       <Header />
       <Row>
-        <Col md={6}>
+      <Col md={6} style={{ marginBottom: "15px" }}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
             <Card.Img src="https://media.istockphoto.com/id/466290466/photo/california-beach-sunset-bright-orange-and-pink.jpg?s=612x612&w=0&k=20&c=VP8rqlszfxrVKK3EwKXlhuUSRi48Q63xIxmJOtoYVSo=" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
@@ -21,7 +21,7 @@ const Carlsbad = () => {
         </Col>
         <Col md={6}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Body>
+            <Card.Body style={{ marginBottom: "30px"}}>
               <Card.Title style={{ textAlign: "center" }}>Details</Card.Title>
               <Card.Text>
                 <div><strong>Address:</strong> <p>Carlsbad, CA 92008</p></div>

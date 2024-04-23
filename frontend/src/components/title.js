@@ -6,15 +6,12 @@ import Col from 'react-bootstrap/Col';
 
 const Title = () => {
   return (
-    <Card style={{ background: "#ffeae3" }}>
+    <Card style={{ background: "lightblue"}}>
       <Card.Body>
-        <h1 className="title" style={{ textAlign: "center", background: "#0095b6", fontSize: "75px", color: "#ffb79d", textShadow: "2px 5px 10px #0dba86", 
-        '@media (max-width: 768px)': {
-          fontSize: '50px'
-        } }}>
+        <h1 className="title" style={{ textAlign: "center", background: "#0095b6", fontSize: "65px", color: "#ffb79d", textShadow: "2px 5px 10px #0dba86" }}>
           San Diego Coastal Paradise
         </h1>
-        <p className="welcome" style={{ border: "3px solid #ffb79d", padding: "40px", fontSize: "23px", textAlign: "justify", fontFamily: "trebuchet ms",
+        <p className="welcome" style={{ border: "3px solid #ffb79d", marginTop: "60px", padding: "40px", fontSize: "18px", textAlign: "justify", fontFamily: "trebuchet ms",
         '@media (max-width: 768px)': {
           fontSize: '18px'
         } }}>
@@ -24,12 +21,15 @@ const Title = () => {
           New to our community? Welcome aboard! If you're ready to embark on exciting beach adventures, join our community of beach buddies by sharing your name and email. Dive into the ocean of experiences awaiting you! Already part of our crew? Welcome back! Let's continue beachcombing together and create unforgettable seaside memories!
         </p>
         <Container className="pt-3">
-          <Row>
+          <Row style={{paddingBottom: "350px", '@media (max-width: 768px)': {paddingBottom: "1px"}}}>
             <Col>
               <img src="https://www.prettyfluffy.com/wp-content/uploads/2022/04/Pet-Friendly-Gippsland-Pretty-Fluffy-Travel_-811.jpg" alt="dog beach" className="img-fluid" />
             </Col>
             <Col>
               <img src="https://a.cdn-hotels.com/gdcs/production167/d76/2a15eef8-7360-464c-89f2-d48953b9edcb.jpg" alt="mission beach" className="img-fluid" />
+            </Col>
+            <Col>
+              <img src="https://www.pacific-coast-highway-travel.com/images/Encinitas-California-1.jpg" alt="encinitas beach" className="img-fluid" />
             </Col>
             <Col>
               <img src="https://live.staticflickr.com/574/33071773625_99d0c69fd9_b.jpg" alt="la jolla seals" className="img-fluid" />

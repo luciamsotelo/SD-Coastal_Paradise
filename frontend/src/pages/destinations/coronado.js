@@ -11,7 +11,7 @@ const Coronado = () => {
       <Navigation />
       <Header />
       <Row>
-        <Col md={6}>
+      <Col md={6} style={{ marginBottom: "15px" }}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
             <Card.Img src="https://coronadotimes.com/wp-content/uploads/import/photos/1001-2000/1140-nadonov13016.JPG" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
@@ -21,7 +21,7 @@ const Coronado = () => {
         </Col>
         <Col md={6}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Body>
+          <Card.Body style={{ marginBottom: "30px"}}>
               <Card.Title style={{ textAlign: "center" }}>Details</Card.Title>
               <Card.Text>
                 <div><strong>Address:</strong> <p>Coronado, CA 92118 </p></div>

@@ -11,7 +11,7 @@ const LaJolla = () => {
       <Navigation />
       <Header />
       <Row>
-        <Col md={6}>
+      <Col md={6} style={{ marginBottom: "15px" }}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
             <Card.Img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/e4/45/74.jpg" alt="Card image" style={{ height: "100%" }} />
             <Card.ImgOverlay>
@@ -21,7 +21,7 @@ const LaJolla = () => {
         </Col>
         <Col md={6}>
           <Card className="bg-dark text-white" style={{ margin: "15px", height: "100%" }}>
-            <Card.Body>
+          <Card.Body style={{ marginBottom: "30px"}}>
               <Card.Title style={{ textAlign: "center" }}>Details</Card.Title>
               <Card.Text>
                 <div><strong>Address:</strong> <p> La Jolla, CA 92037</p></div>
