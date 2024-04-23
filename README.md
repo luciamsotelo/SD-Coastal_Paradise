@@ -31,6 +31,50 @@ To install San Diego Coastal Paradise, follow these steps:
 5. Explore the beaches by clicking on the "Dive In" button for detailed information about each beach.
 6. Use the navigation buttons to explore other features like the about us and contact pages.
 
+## API Endpoints
+
+### 1. Get All login information
+- **Method:** `POST`
+- **Endpoint:** `/api/login`
+- **Description:** Submits a match between an email and password.
+- **Response:**
+  ```json
+  {
+    "status": "success",
+    "data": [
+      {
+        "email": "user email"
+      },
+      {
+        "password": "user password"
+      }
+    ]
+  }
+
+  ### 2. Get All Items
+- **Method:** `POST`
+- **Endpoint:** `/api/register`
+- **Description:** Submit a match between an email and password.
+- **Response:**
+  ```json
+  {
+    "status": "success",
+    "data": [
+      {
+        "firsName": "user first name"
+      },
+      {
+        "lastName": "user last name"
+      }
+      {
+        "email": "user email"
+      },
+      {
+        "password": "user password"
+      }
+    ]
+  }
+
 ## Dependencies
 
 ```json
@@ -57,6 +101,33 @@ We welcome contributions from the community! If you'd like to contribute to San 
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and ensure that tests pass.
 4. Submit a pull request with a clear description of your changes.
+
+## Future Goals
+
+As we continue to develop San Diego Coastal Paradise, we have several goals in mind to enhance the user experience and functionality of the app. Here are some of our future goals:
+
+### User Rating and Comments
+
+We plan to implement a feature that allows users to rate and leave comments on their experiences at each beach. This will provide valuable feedback for other users and help enhance the community engagement aspect of the app.
+
+### Enhanced Community Interaction
+
+In addition to rating and comments, we aim to introduce features that facilitate interactions among community members, such as forums, event postings, and user-generated content sharing.
+
+### Personalized Recommendations
+
+We aspire to provide personalized beach recommendations based on user preferences, previous interactions with the app, and community feedback. This will make the app even more tailored to each user's interests and preferences.
+
+### Accessibility Improvements
+
+To ensure inclusivity, we are committed to improving the accessibility of the app for users with disabilities. This includes optimizing the app for screen readers, improving keyboard navigation, and providing alternative text for images.
+
+### Performance Optimization
+
+Continuously optimizing the performance of the app is one of our priorities. We aim to reduce loading times, improve server response times, and optimize resource usage to provide a seamless and responsive user experience.
+
+We are excited about these future developments and are committed to making San Diego Coastal Paradise the ultimate guide for exploring the beautiful beaches of San Diego.
+
 
 Contributors:
   Carlos Hernandez - frontend, backend contributions, UX/UI
