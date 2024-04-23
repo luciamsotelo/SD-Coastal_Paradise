@@ -12,13 +12,13 @@ function ContactInfo() {
         <Card.Title style={{textAlign: 'center', fontSize: '20px', marginBottom: '20px', color: '#0dba86'}}><strong>Contact Information</strong></Card.Title>
         <ListGroup variant="flush" style={{fontSize: '16px', marginBottom: '20px', textAlign: 'center'}}>
           <ListGroup.Item style={{background: 'lightblue'}}>
-            <strong><img src ='https://cdn-icons-png.freepik.com/256/1/1257.png?semt=ais_hybrid' alt="phone" style={{width:"25px", height:"25px", marginRight: '10px'}}></img> Phone:</strong> +1 (123) 456-7890
+            <strong><img src ='https://cdn-icons-png.freepik.com/256/1/1257.png?semt=ais_hybrid' alt="phone" style={{width:"25px", height:"25px", marginRight: '10px'}}></img> Phone:</strong> +1 (619) 555-SAND
           </ListGroup.Item>
           <ListGroup.Item style={{background: 'lightblue'}}>
-            <strong><img src ='https://static.vecteezy.com/system/resources/thumbnails/015/124/150/small/email-message-black-icon-social-icon-set-png.png' alt="email" style={{width:"22px", height:"14px", marginRight: '10px'}}></img> Email:</strong> info@example.com
+            <strong><img src ='https://static.vecteezy.com/system/resources/thumbnails/015/124/150/small/email-message-black-icon-social-icon-set-png.png' alt="email" style={{width:"22px", height:"14px", marginRight: '10px'}}></img> Email:</strong> info@sdcoastalparadise.com
           </ListGroup.Item>
           <ListGroup.Item style={{background: 'lightblue'}}>
-            <strong><img src ='https://static.thenounproject.com/png/2340040-200.png' alt="address" style={{width:"25px", height:"25px", marginRight: '10px'}}></img> Address:</strong> 123 Main St, City, State, ZIP
+            <strong><img src ='https://static.thenounproject.com/png/2340040-200.png' alt="address" style={{width:"25px", height:"25px", marginRight: '10px'}}></img> Address:</strong> 345 Oceanview Avenue, Coral Cove, CA, 92107
           </ListGroup.Item>
           <ListGroup.Item style={{background: 'lightblue'}}>
             <strong><img src ='https://icons.veryicon.com/png/o/miscellaneous/hekr/operation-time.png' alt="hours" style={{width:"25px", height:"25px", marginRight: '10px'}}></img> Hours of Operation:</strong> Monday - Friday: 9am - 5pm
