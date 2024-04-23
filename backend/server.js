@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
+// app.use(express.static('frontend/build'));
 
 const db = require("./models");
 
