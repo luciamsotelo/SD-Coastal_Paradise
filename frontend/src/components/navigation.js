@@ -11,7 +11,7 @@ function topBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="http://localhost:3000/" style={{background: "#ffb79d", textAlign: "center"}}><strong>Home</strong></Nav.Link>
+            <Nav.Link href="https://sd-coastal-paradise.onrender.com/" style={{background: "#ffb79d", textAlign: "center"}}><strong>Home</strong></Nav.Link>
             <Nav.Link href="#link" style={{paddingRight:"125px" }}></Nav.Link>
             <NavDropdown title="Join the Wave" id="basic-nav-dropdown" style={{textAlign: "center"}}>
               <NavDropdown.Item href="https://sd-coastal-paradise.onrender.com/Current">Begin Beachcombing</NavDropdown.Item>
