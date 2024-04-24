@@ -1,4 +1,3 @@
-//server.js file
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -11,30 +10,18 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static("../frontend/build"));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 const db = require("./models");
 
 // Routes
-app.get("/:id", (req, res) => {
-  const id = req.params.id;
-  res.send(id);
-});
 const userRoutes = require("./routes/userRoutes");
 app.use("/api", userRoutes);
 
-
-app.get('/', (req, res) => {
-  const options = {
-    root: path.join(__dirname, '../frontend/build'),
-    dotfiles: 'deny',
-    headers: {
-      'x-timestamp': Date.now(),
-      'x-sent': true
-    }
-  }
-  res.sendFile('index.html', options)
-})
+// Catch-all route to serve React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+});
 
 // Start the server
 app.listen(PORT, async () => {
