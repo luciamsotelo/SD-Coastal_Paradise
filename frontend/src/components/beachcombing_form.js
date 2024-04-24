@@ -55,12 +55,12 @@ function Login() {
         <Modal.Footer style={{}} > 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚 🐚
           <Button variant="info" onClick={handleClose}>Close</Button>
         </Modal.Footer>
-      </Modal>
+        </Modal>
 
-      <Form className="form-container" onSubmit={handleSubmit}>
-        <p className="welcome-message" style={{marginTop: '-80px', marginBottom: '50px', color: '#0095b6'}}>
-          <strong>"Welcome back! It's absolutely awesome to see you catching the waves with us once again, soaking up the sun and the salty breeze. Your return adds an extra splash of excitement to our beach crew, bringing back those chilled vibes and endless smiles. Let's ride those waves together, embracing the laidback spirit of the shore and savoring every moment of this sun-kissed adventure. Welcome home to the sand, surf, and smiles!"</strong>
-        </p>
+<Form className="form-container" onSubmit={handleSubmit}>
+  <p className="welcome-message" style={{marginTop: '-80px', marginBottom: '50px', color: '#0095b6'}}>
+    <strong>"Welcome back! It's absolutely awesome to see you catching the waves with us once again, soaking up the sun and the salty breeze. Your return adds an extra splash of excitement to our beach crew, bringing back those chilled vibes and endless smiles. Let's ride those waves together, embracing the laidback spirit of the shore and savoring every moment of this sun-kissed adventure. Welcome home to the sand, surf, and smiles!"</strong>
+  </p>
 
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Form.Label column sm={2}>

@@ -30,7 +30,7 @@ const MyForm = () => {
   
     try {
       
-      const response = await axios.post(`${API_URL}/api/register`, formData);
+      const response = await axios.post("/api/register", formData);
       console.log("Response: ", response.data);
       setFormData({
         firstName: '',
