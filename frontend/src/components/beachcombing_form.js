@@ -4,7 +4,7 @@ import { Button, Col, Form, Modal, Row } from 'react-bootstrap';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = process.env.REACT_APP_BACKEND_URL || '';
 
 function Login() {
   const [email, setEmail] = useState('');

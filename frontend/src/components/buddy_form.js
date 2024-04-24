@@ -3,7 +3,7 @@ import { Form, Button, Modal, Alert } from 'react-bootstrap';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom'; 
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = process.env.REACT_APP_BACKEND_URL || '';
 
 const MyForm = () => {
   const [formData, setFormData] = useState({
