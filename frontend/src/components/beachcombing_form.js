@@ -4,6 +4,8 @@ import { Button, Col, Form, Modal, Row } from 'react-bootstrap';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
 
+const API_URL = process.env.REACT_APP_BACKEND_URL;
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +17,7 @@ function Login() {
     event.preventDefault(); 
 
     try {
-      const response = await axios.post("http://localhost:3001/api/login", { email, password });
+      const response = await axios.post(`${API_URL}/api/login`, { email, password });
       setUserName(response.data.user.firstName); 
       setShowModal(true);
       setTimeout(() => {
