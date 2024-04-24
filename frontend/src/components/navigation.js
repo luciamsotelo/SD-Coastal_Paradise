@@ -14,8 +14,8 @@ function topBar() {
             <Nav.Link href="http://localhost:3000/" style={{background: "#ffb79d", textAlign: "center"}}><strong>Home</strong></Nav.Link>
             <Nav.Link href="#link" style={{paddingRight:"125px" }}></Nav.Link>
             <NavDropdown title="Join the Wave" id="basic-nav-dropdown" style={{textAlign: "center"}}>
-              <NavDropdown.Item href="http://localhost:3000/Current">Begin Beachcombing</NavDropdown.Item>
-              <NavDropdown.Item href="http://localhost:3000/Register">
+              <NavDropdown.Item href="https://sd-coastal-paradise.onrender.com/Current">Begin Beachcombing</NavDropdown.Item>
+              <NavDropdown.Item href="https://sd-coastal-paradise.onrender.com/Register">
                 Become a Beach Buddy
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3"></NavDropdown.Item>
