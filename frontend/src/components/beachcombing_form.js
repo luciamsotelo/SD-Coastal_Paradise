@@ -36,15 +36,15 @@ function Login() {
 
   return (
     <div style={{
-      backgroundImage: `url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/122785/122785_00_2x.jpg?20170602013312)`,
+      backgroundImage: 'url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/122785/122785_00_2x.jpg?20170602013312)', 
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      minHeight: '100vh',
-      alignItems: 'center',
-      justifyContent: 'center',
-      display: 'flex',
+      width: '100%',
+      height: '100vh',
+      padding: '20px',
+      textAlign: 'justify',
     }}>
+      <
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton style={{ backgroundColor: "#0095b6", color: "#ffb79d"}}>
           <Modal.Title><strong>Shore is nice to Sea you!</strong></Modal.Title>
