@@ -43,7 +43,7 @@ function Login() {
       minHeight: '100vh',
       alignItems: 'center',
       justifyContent: 'center',
-      paddingTop: '30px',
+      display: 'flex',
     }}>
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton style={{ backgroundColor: "#0095b6", color: "#ffb79d"}}>
@@ -57,7 +57,7 @@ function Login() {
 
       <div style={{ maxWidth: '500px', width: '100%' }}>
         <p className="welcome-message" style={{marginTop: '20px', marginBottom: '20px', color: '#0095b6', textAlign: 'center', padding: '10px'}}>
-          <strong>"Ahoy there! It's an absolute delight to welcome you to our beach crew for the first time! Picture this: the sun casting its golden glow across the waves, the salty breeze tickling your senses, and you, ready to embark on a thrilling adventure with us. Your arrival infuses our beach crew with an extra dose of excitement, setting the stage for unforgettable moments and endless smiles. Let's dive into the surf together, embracing the carefree spirit of the shore and savoring each sun-kissed moment of this incredible journey. Welcome home to the sand, surf, and smiles!"</strong>
+          <strong>"Hey there! Welcome back! It's absolutely awesome to see you catching the waves with us once again, soaking up the sun and the salty breeze. Your return adds an extra splash of excitement to our beach crew, bringing back those chilled vibes and endless smiles. Let's ride those waves together, embracing the laidback spirit of the shore and savoring every moment of this sun-kissed adventure. Here's to you, bringing that beachy bliss back into our lives. Welcome home to the sand, surf, and smiles!"</strong>
         </p>
 
         <Form className="form-container" onSubmit={handleSubmit}>
