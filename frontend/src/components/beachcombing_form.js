@@ -44,7 +44,7 @@ function Login() {
       padding: '20px',
       textAlign: 'justify',
     }}>
-      <
+      
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton style={{ backgroundColor: "#0095b6", color: "#ffb79d"}}>
           <Modal.Title><strong>Shore is nice to Sea you!</strong></Modal.Title>
@@ -55,8 +55,8 @@ function Login() {
         </Modal.Footer>
         </Modal>
 
-      <div style={{ maxWidth: '500px', width: '100%' }}>
-        <p className="welcome-message" style={{marginTop: '20px', marginBottom: '20px', color: '#0095b6', textAlign: 'center', padding: '10px'}}>
+      <div>
+        <p className="welcome-message" style={{marginTop: '50px', marginBottom: '20px', color: '#0095b6'}}>
           <strong>"Hey there! Welcome back! It's absolutely awesome to see you catching the waves with us once again, soaking up the sun and the salty breeze. Your return adds an extra splash of excitement to our beach crew, bringing back those chilled vibes and endless smiles. Let's ride those waves together, embracing the laidback spirit of the shore and savoring every moment of this sun-kissed adventure. Here's to you, bringing that beachy bliss back into our lives. Welcome home to the sand, surf, and smiles!"</strong>
         </p>
 
