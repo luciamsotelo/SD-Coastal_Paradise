@@ -56,8 +56,6 @@ const MyForm = () => {
       backgroundImage: 'url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/sandy-beach-morning-kevin-smith.jpg)', 
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      width: '100%',
-      height: '100vh',
       padding: '20px',
       textAlign: 'justify',
     }}>
@@ -77,10 +75,11 @@ const MyForm = () => {
       <Form className="form-container" onSubmit={handleSubmit}>
 
         <div>
-        <p className="welcome-message" style={{ marginTop: '50px', marginBottom: '20px', color: 'black' }}>
+        <p className="welcome-message" style={{ margin: '-85px', color: 'black' }}>
           <strong>"Ahoy there! It's an absolute delight to welcome you to our beach crew for the first time! Picture this: the sun casting its golden glow across the waves, the salty breeze tickling your senses, and you, ready to embark on a thrilling adventure with us. Your arrival infuses our beach crew with an extra dose of excitement, setting the stage for unforgettable moments and endless smiles. Let's dive into the surf together, embracing the carefree spirit of the shore and savoring each sun-kissed moment of this incredible journey. Welcome home to the sand, surf, and smiles!"</strong>
         </p>
         </div>
+        <div style={{ marginTop: '110px' }}>
         <Form.Group controlId="formFirstName">
           <Form.Label>First Name</Form.Label>
           <Form.Control 
@@ -125,6 +124,7 @@ const MyForm = () => {
             required 
           />
         </Form.Group>
+        </div>
         <br></br>
         <Button variant="info" type="submit">
           Join the Community

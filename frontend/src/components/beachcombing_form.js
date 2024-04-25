@@ -39,8 +39,6 @@ function Login() {
       backgroundImage: 'url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/122785/122785_00_2x.jpg?20170602013312)', 
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      width: '100%',
-      height: '100vh',
       padding: '20px',
       textAlign: 'justify',
     }}>
