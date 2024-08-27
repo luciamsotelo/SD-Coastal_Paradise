@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 const Title = () => {
   return (
@@ -23,19 +24,44 @@ const Title = () => {
         <Container className="pt-3">
           <Row style={{paddingBottom: "350px", '@media (max-width: 768px)': {paddingBottom: "1px"}}}>
             <Col>
-              <img src="https://www.prettyfluffy.com/wp-content/uploads/2022/04/Pet-Friendly-Gippsland-Pretty-Fluffy-Travel_-811.jpg" alt="dog beach" className="img-fluid" />
+              <Link to="/ocean">
+                <img 
+                  src="https://www.prettyfluffy.com/wp-content/uploads/2022/04/Pet-Friendly-Gippsland-Pretty-Fluffy-Travel_-811.jpg" 
+                  alt="dog beach" 
+                  className="img-fluid" 
+                />
+              </Link>
+            </Col>
+
+            <Col>
+            <Link to="/mission">
+              <img 
+                src="https://a.cdn-hotels.com/gdcs/production167/d76/2a15eef8-7360-464c-89f2-d48953b9edcb.jpg" alt="mission beach" 
+                className="img-fluid" />
+              </Link>
             </Col>
             <Col>
-              <img src="https://a.cdn-hotels.com/gdcs/production167/d76/2a15eef8-7360-464c-89f2-d48953b9edcb.jpg" alt="mission beach" className="img-fluid" />
+            <Link to="/encinitas">
+              <img 
+                src="https://www.pacific-coast-highway-travel.com/images/Encinitas-California-1.jpg" alt="encinitas beach" 
+                className="img-fluid" />
+              </Link>
             </Col>
             <Col>
-              <img src="https://www.pacific-coast-highway-travel.com/images/Encinitas-California-1.jpg" alt="encinitas beach" className="img-fluid" />
+            <Link to="/jolla">
+              <img 
+                src="https://live.staticflickr.com/574/33071773625_99d0c69fd9_b.jpg" 
+                alt="la jolla seals" 
+                className="img-fluid" />
+              </Link>
             </Col>
             <Col>
-              <img src="https://live.staticflickr.com/574/33071773625_99d0c69fd9_b.jpg" alt="la jolla seals" className="img-fluid" />
-            </Col>
-            <Col>
-              <img src="https://cdn.shopify.com/s/files/1/2516/8932/products/NewPierGold7-12-22_2000x.jpg?v=1657654002" alt="oceanside beach" className="img-fluid" />
+            <Link to="/oceanside">
+              <img 
+                src="https://cdn.shopify.com/s/files/1/2516/8932/products/NewPierGold7-12-22_2000x.jpg?v=1657654002" 
+                alt="oceanside beach" 
+                className="img-fluid" />
+              </Link>
             </Col>
           </Row>
         </Container>
