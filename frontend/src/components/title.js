@@ -4,63 +4,110 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import sdcplogo from '../images/sdcplogo.jpg'; // Adjust path if necessary
 
 const Title = () => {
   return (
-    <Card style={{ background: "lightblue"}}>
+    <Card style={{ background: "lightblue", border: 'none' }}>
       <Card.Body>
-        <h1 className="title" style={{ textAlign: "center", background: "#0095b6", fontSize: "65px", color: "#ffb79d", textShadow: "2px 5px 10px #0dba86" }}>
+        <h1 className="title" style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          background: '#0095b6',
+          fontSize: '50px',
+          color: '#ffb79d',
+          textShadow: '2px 5px 10px #0dba86',
+          padding: '10px',
+          margin: 0,
+          flexWrap: 'wrap'
+        }}>
+          <Link to="/">
+          <img
+            src={sdcplogo}
+            alt="logo"
+            style={{
+              height: '15vh',
+              marginRight: '20px',
+              flexShrink: '0',
+              borderRadius: '20%',
+              border: '4px solid rgba(255, 255, 255, 0.5)'
+            }}
+          />
+          </Link>
           San Diego Coastal Paradise
         </h1>
-        <p className="welcome" style={{ border: "3px solid #ffb79d", marginTop: "60px", padding: "40px", fontSize: "18px", textAlign: "justify", fontFamily: "trebuchet ms",
-        '@media (max-width: 768px)': {
-          fontSize: '18px'
-        } }}>
+        <p className="welcome" style={{
+          border: "3px solid #ffb79d",
+          marginTop: "60px",
+          padding: "40px",
+          fontSize: "18px",
+          textAlign: "justify",
+          fontFamily: "Trebuchet MS",
+          background: 'white',
+          '@media (max-width: 768px)': {
+            fontSize: '16px',
+            padding: '20px',
+            marginTop: '30px'
+          }
+        }}>
           Welcome to San Diego Coastal Paradise! Our app is your ultimate guide to exploring the breathtaking beaches of San Diego. From Imperial Beach to Oceanside, embark on a journey along the stunning coastline. Discover fun facts about each beach, from Coronado's Hotel del Coronado to Ocean Beach's bohemian vibe. Immerse yourself in La Jolla Shores, surf at Encinitas Beach, and enjoy the sun at Carlsbad Beach. Whether you're a local or a visitor, our app is your go-to companion for experiencing San Diego's coastal gems. Start your adventure today!
           <br />
           <br />
           New to our community? Welcome aboard! If you're ready to embark on exciting beach adventures, join our community of beach buddies by sharing your name and email. Dive into the ocean of experiences awaiting you! Already part of our crew? Welcome back! Let's continue beachcombing together and create unforgettable seaside memories!
         </p>
         <Container className="pt-3">
-          <Row style={{paddingBottom: "350px", '@media (max-width: 768px)': {paddingBottom: "1px"}}}>
+          <Row style={{ paddingBottom: "350px", '@media (max-width: 768px)': { paddingBottom: "1px" } }}>
             <Col>
               <Link to="/ocean">
-                <img 
-                  src="https://www.prettyfluffy.com/wp-content/uploads/2022/04/Pet-Friendly-Gippsland-Pretty-Fluffy-Travel_-811.jpg" 
-                  alt="dog beach" 
-                  className="img-fluid" 
+                <img
+                  src="https://www.prettyfluffy.com/wp-content/uploads/2022/04/Pet-Friendly-Gippsland-Pretty-Fluffy-Travel_-811.jpg"
+                  alt="dog beach"
+                  className="img-fluid"
+                  style={{ borderRadius: '8px' }}
                 />
               </Link>
             </Col>
 
             <Col>
-            <Link to="/mission">
-              <img 
-                src="https://a.cdn-hotels.com/gdcs/production167/d76/2a15eef8-7360-464c-89f2-d48953b9edcb.jpg" alt="mission beach" 
-                className="img-fluid" />
+              <Link to="/mission">
+                <img
+                  src="https://a.cdn-hotels.com/gdcs/production167/d76/2a15eef8-7360-464c-89f2-d48953b9edcb.jpg"
+                  alt="mission beach"
+                  className="img-fluid"
+                  style={{ borderRadius: '8px' }}
+                />
               </Link>
             </Col>
             <Col>
-            <Link to="/encinitas">
-              <img 
-                src="https://www.pacific-coast-highway-travel.com/images/Encinitas-California-1.jpg" alt="encinitas beach" 
-                className="img-fluid" />
+              <Link to="/encinitas">
+                <img
+                  src="https://www.pacific-coast-highway-travel.com/images/Encinitas-California-1.jpg"
+                  alt="encinitas beach"
+                  className="img-fluid"
+                  style={{ borderRadius: '8px' }}
+                />
               </Link>
             </Col>
             <Col>
-            <Link to="/jolla">
-              <img 
-                src="https://live.staticflickr.com/574/33071773625_99d0c69fd9_b.jpg" 
-                alt="la jolla seals" 
-                className="img-fluid" />
+              <Link to="/jolla">
+                <img
+                  src="https://live.staticflickr.com/574/33071773625_99d0c69fd9_b.jpg"
+                  alt="la jolla seals"
+                  className="img-fluid"
+                  style={{ borderRadius: '8px' }}
+                />
               </Link>
             </Col>
             <Col>
-            <Link to="/oceanside">
-              <img 
-                src="https://cdn.shopify.com/s/files/1/2516/8932/products/NewPierGold7-12-22_2000x.jpg?v=1657654002" 
-                alt="oceanside beach" 
-                className="img-fluid" />
+              <Link to="/oceanside">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/2516/8932/products/NewPierGold7-12-22_2000x.jpg?v=1657654002"
+                  alt="oceanside beach"
+                  className="img-fluid"
+                  style={{ borderRadius: '8px' }}
+                />
               </Link>
             </Col>
           </Row>
